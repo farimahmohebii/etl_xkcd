@@ -1,0 +1,20 @@
+# Environments
+.python-version
+**/.env
+.venv
+env/
+venv/
+
+# MacOS
+**/.DS_Store
+
+# Logs
+**/logs
+**/*.log
+
+# python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
