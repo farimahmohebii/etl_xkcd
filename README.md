@@ -86,6 +86,7 @@ prefect deployment run 'process-xkcd-comics/XKCD Comic Fetcher'
 ```
 Now XKCD Data Pipeline is fully automated and ready to run!
 # Step 4: Transform & Validate Data with dbt
+![ER Diagram](tables.drawio.png)
 ### 13. Configure dbt Profiles
 1. Navigate to the transformation/ folder in the project.
 2. Open the profiles.yml file.
