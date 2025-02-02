@@ -87,6 +87,7 @@ prefect deployment run 'process-xkcd-comics/XKCD Comic Fetcher'
 Now XKCD Data Pipeline is fully automated and ready to run!
 # Step 4: Transform & Validate Data with dbt
 ![ER Diagram](tables.drawio.png)
+
 This diagram shows the relationship between:
 - `dim_comics`: A dimension table with descriptive attributes of comics.
 - `fact_comic_views`: A fact table storing metrics such as cost, views, and review scores.
