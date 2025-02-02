@@ -5,7 +5,7 @@ prefect-version: 3.1.15
 # Define how the project should be pulled into a worker
 pull:
 - prefect.deployments.steps.set_working_directory:
-    directory: /Users/farimahmohebi/Desktop/JET/Scripts # TODO: update the address
+    directory: "/absolute/path/to/your/project" # Update this directory
 
 deployments:
 - name: DBT Transformation Runner
