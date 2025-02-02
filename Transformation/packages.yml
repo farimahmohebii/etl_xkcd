@@ -1,0 +1,4 @@
+packages:
+  - package: calogica/dbt_expectations
+    version: [">=0.8.0", "<1.0.0"]
+

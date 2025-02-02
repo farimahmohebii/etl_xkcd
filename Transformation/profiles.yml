@@ -1,0 +1,12 @@
+Transformation:
+  outputs:
+    dev:
+      dbname: xkcd_db
+      host: localhost
+      pass: '1377'
+      port: 5432
+      schema: xkcd_db
+      threads: 1
+      type: postgres
+      user: farimah
+  target: dev

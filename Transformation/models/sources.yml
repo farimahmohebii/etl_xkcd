@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: xkcd_source
+    description: "Raw XKCD comic data stored in PostgreSQL"
+    schema: public
+    tables:
+      - name: xkcd_comics
+        description: "Table containing XKCD comic metadata"
+
