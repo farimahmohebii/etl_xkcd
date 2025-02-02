@@ -1,0 +1,8 @@
+name: XKCD_Comics_Fetcher
+flow_name: process_xkcd_comics
+entrypoint: scripts/fetch_xkcd.py:process_xkcd_comics
+work_pool:
+  name: "default-agent-pool"
+  job_variables: {}
+schedule:
+  interval: 259200  # Runs every 3 days (approx Mon/Wed/Fri)

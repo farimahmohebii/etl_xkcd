@@ -1,0 +1,7 @@
+name: XKCD_Comics_Fetcher
+flow_name: process_xkcd_comics
+entrypoint: scripts/fetch_xkcd.py:process_xkcd_comics
+schedule:
+  cron: "0 6 * * 1,3,5"  # Runs at 6 AM on Mon, Wed, Fri
+work_pool:
+  name: default-agent-pool
