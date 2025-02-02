@@ -1,0 +1,28 @@
+# Prefect Deployment Configuration
+name: XKCD_ETL
+prefect-version: 3.1.15
+
+# Define how the project should be pulled into a worker
+pull:
+- prefect.deployments.steps.set_working_directory:
+    directory: /Users/farimahmohebi/Desktop/JET/Scripts # TODO: update the address
+
+deployments:
+- name: DBT Transformation Runner
+  version: 1.0.0
+  tags:
+  - dbt
+  - ETL
+  description: Runs dbt transformations automatically after new XKCD data is ingested.
+  entrypoint: run_dbt_pipeline.py:execute_dbt_pipeline
+  parameters: {}
+  work_pool:
+    name: default-pool
+    work_queue_name:
+    job_variables: {}
+  concurrency_limit:
+  schedules:
+  - interval: 3600.0
+    anchor_date: '2025-02-02T13:15:20.913500+00:00'
+    timezone: UTC
+    active: true
